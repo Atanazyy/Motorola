@@ -9,7 +9,7 @@ title = tkinter.Label(root, text='Bioinformatyka')
 title.pack()
 
 e = tkinter.Entry(root, borderwidth = 5)
-e.pack(side=tkinter.LEFT)
+e.pack(side = tkinter.LEFT)
 
 def rozkod():
     RNA = e.get().replace(" ", "")
@@ -22,6 +22,6 @@ def rozkod():
     print(proteins)
 
 s = tkinter.Button(root, text = 'Submit', command = rozkod)
-s.pack(side=tkinter.BOTTOM)
+s.pack(side = tkinter.BOTTOM)
 
 root.mainloop()
