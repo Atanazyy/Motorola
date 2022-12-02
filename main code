@@ -26,3 +26,4 @@ s = tkinter.Button(root, text = 'Submit', command = rozkod)
 s.pack(side=tkinter.BOTTOM)
 
 root.mainloop()
+ben
