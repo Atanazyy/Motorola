@@ -13,13 +13,10 @@ e.pack(side = tkinter.LEFT)
 
 def rozkod():
     RNA = e.get().replace(" ", "")
-    amino = tkinter.Label(root, text = RNA)
-    amino.pack()
+
     proteins = convert.decode(RNA)
-    if (type(proteins) is int):
-        print("Blad numer", proteins)
-        return proteins
-    print(proteins)
+    proteins = tkinter.Label(root, text=proteins)
+    proteins.pack()
 
 s = tkinter.Button(root, text = 'Submit', command = rozkod)
 s.pack(side = tkinter.BOTTOM)
